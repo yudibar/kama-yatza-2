@@ -1,21 +1,4 @@
-# כמה יצא? V2
+# כמה יצא? V2.2
+GitHub Pages-safe build. No bundler and no ES module imports are required at runtime.
 
-אפליקציית Web סטטית לניהול והבנת הוצאות אשראי. כרגע נתמך יבוא Excel של כאל.
-
-## הרעיון
-האפליקציה מפרידה בין:
-- **הכרחי** — נספר בסך ההוצאות, אך לא הופך אוטומטית ליעד קיצוץ.
-- **חשוב, אפשר לייעל** — שירותים שצריך, אבל שווה לבדוק בהם מחיר/חלופה.
-- **בשליטתי** — הוצאות לא הכרחיות שמנוהלות מול תקציב.
-- **לטיפול** — עסקאות שהסיווג הראשוני אינו בטוח לגביהן.
-
-הסיווג הראשוני אוטומטי. שינוי סיווג של בית עסק נשמר בדפדפן ומוחל גם על יבואים עתידיים.
-
-## תקציבים
-יש תקציב חודשי ותקציב מצטבר (rollover). המצטבר מיועד לרכישות חד-פעמיות וגדולות, כך שחודשים שקטים בונים מרווח לחודש שבו קונים משהו גדול.
-
-## פרטיות
-הקובץ נקרא בדפדפן באמצעות SheetJS. העסקאות וההעדפות נשמרות ב-localStorage ולא נשלחות לשרת של האפליקציה.
-
-## Deploy ל-GitHub Pages
-ה-workflow תחת `.github/workflows/deploy-pages.yml` מוכן לפריסה סטטית. ב-GitHub: Settings → Pages → Source: GitHub Actions.
+Deploy: upload the CONTENTS of this folder to the repository root, then Settings > Pages > Source: GitHub Actions.
