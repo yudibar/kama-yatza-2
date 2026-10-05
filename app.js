@@ -50,7 +50,7 @@ function analyze(items,prefs){
  return {decorated,current,cur,total,byControl,byCategory,budgetRows,score,review,opt,trend,insights};
 }
 
-const XLSX = window.XLSX;
+const SheetJS = window.XLSX;
 
 const HEADER_MARKER = 'תאריך\nעסקה';
 const text = v => String(v ?? '').trim();
